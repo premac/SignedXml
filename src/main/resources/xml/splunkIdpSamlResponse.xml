@@ -1,0 +1,52 @@
+<samlp:Response Consent="urn:oasis:names:tc:SAML:2.0:consent:unspecified" Destination="https://system.netsuite.com/saml2/acs" ID="_c92ee26e-ceb4-4fad-9d5c-80cd5e4dd406" IssueInstant="2013-03-14T18:21:40.120Z" Version="2.0" xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol">
+	<Issuer xmlns="urn:oasis:names:tc:SAML:2.0:assertion">http://fs.1800petmeds.com/adfs/services/trust</Issuer>
+	<samlp:Status>
+		<samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+	</samlp:Status>
+	<Assertion ID="_3e2f8fcd-d184-4261-a64e-06047c78dfca" IssueInstant="2013-03-14T18:21:40.119Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
+		<Issuer>http://fs.1800petmeds.com/adfs/services/trust</Issuer>
+		<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+			<ds:SignedInfo>
+				<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+				<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+				<ds:Reference URI="#_3e2f8fcd-d184-4261-a64e-06047c78dfca">
+					<ds:Transforms>
+						<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+						<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+					</ds:Transforms>
+					<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+					<ds:DigestValue>dZjZ6Ox5lgSiLNZyq77ICCTjMAg=</ds:DigestValue>
+				</ds:Reference>
+			</ds:SignedInfo>
+			<ds:SignatureValue>Hqe+LU6n/F92VPm7S/5lN6za/0PB5N3YC+5a9CbAdNOTMBG8ZzoPwWCKU+Z/BQaEG3FUp3+W7W4SNiDW4gpFPXBuBI4MqaH6Jym7JnZ1A48kS4drVH/F+xjBlwxlMxjVmdVrdg5NXPwJ6YtFshqiOUvasjv5bM2iMNy9/axg/wLL7y08MXcZ/vg7xbEy7yzxqxGpdWXZKACMwm03saz4BVvnqIepGye/rz+NQkw2ELpiwNa14nURMOLr7kTDN5pBctUewVcp787JYP0svSiUnIDH5ujK7yyQ3VWO6TrM9Sd5X6KEVMTkaDRR39vMxeRM9qv7bCIf+8Ob2oc8vtns+g==</ds:SignatureValue>
+			<KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+				<ds:X509Data>
+					<ds:X509Certificate>MIIC4DCCAcigAwIBAgIQaadu31KTQK9LImjng9ksOzANBgkqhkiG9w0BAQsFADAsMSowKAYDVQQDEyFBREZTIFNpZ25pbmcgLSBmcy4xODAwcGV0bWVkcy5jb20wHhcNMTMwMjI4MTYxNjMwWhcNMTQwMjI4MTYxNjMwWjAsMSowKAYDVQQDEyFBREZTIFNpZ25pbmcgLSBmcy4xODAwcGV0bWVkcy5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCKTzf295ty77Mo9lSA9CmIR6cyx7rsg2C9840kPfnBoFF3UeneKkiy561cBtdYd1Qx9k4kNDgkXSad8D6rqH/vW9U4Z4aTT2m4RzFcsRZubJSqlJl72s3FQkZp5UYcxngCmcUUgacHekx9wc8Tqc4dLiBgaoHO6FwlNH2vXPaNST+gLY00lWweCi/1vfiVte1bSOLJ0S/WTMdInbhO3daTD1O+lbWLvLohrWJLjhA1JlUB+Oj6FuQfmBx73oW3Eihh6hVxT0dlmgp1HLqoC70UnDZnR56lqtFPBqqBgouRxiDKbKK9tc/m+mFbfdqDpLdV56VdMbuXxV+doEs98nM5AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAHgOSObR7A02D4RhRU6iLnKyoL6AAjCmZvcOg5o1NBykPYgM8X+6bCEdht3DFIElgEd4uqsRbWbQzK7uYY7zFSjVG82uhU4sEouzgPX/kVx8WfPuwcKKaKfUsPg38P5CJZYzhkau4Kft87NZKq9dpX2oCb9vbUqXzAQzzD79kp6MxpnNl1s3GCKdOjmjwCSx+6kG/rocIeLeSi7rpJRnvtZ88f6JVXuAaT6Ih3vEfczaY8TPSykdd4VpOHLAOcjWq2YXb8Gwm1w9U7HEQ9VLjtZwkLTdUjLk39coXqJx+jsHW1qtTnBSBWKebOqFcSBbWslRdSfKfu4fwzMm7R73t1U=</ds:X509Certificate>
+				</ds:X509Data>
+			</KeyInfo>
+		</ds:Signature>
+		<Subject>
+			<SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+				<SubjectConfirmationData NotOnOrAfter="2013-03-14T18:26:40.120Z" Recipient="https://system.netsuite.com/saml2/acs"/>
+			</SubjectConfirmation>
+		</Subject>
+		<Conditions NotBefore="2013-03-14T18:21:40.116Z" NotOnOrAfter="2013-03-14T19:21:40.116Z">
+			<AudienceRestriction>
+				<Audience>http://www.netsuite.com/sp</Audience>
+			</AudienceRestriction>
+		</Conditions>
+		<AttributeStatement>
+			<Attribute Name="email">
+				<AttributeValue>ASales@1800petmeds.com</AttributeValue>
+			</Attribute>
+			<Attribute Name="account">
+				<AttributeValue>3354325</AttributeValue>
+			</Attribute>
+		</AttributeStatement>
+		<AuthnStatement AuthnInstant="2013-03-14T18:21:40.015Z">
+			<AuthnContext>
+				<AuthnContextClassRef>urn:federation:authentication:windows</AuthnContextClassRef>
+			</AuthnContext>
+		</AuthnStatement>
+	</Assertion>
+</samlp:Response>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<saml2p:Response Destination="https://devbox.netsuite.com/saml2/acs" ID="_8af677ea-f60a-4497-befa-0c6d2c5f4e1d" IssueInstant="2012-11-16T09:02:21.812Z" Version="2.0" xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+	<Issuer xmlns="urn:oasis:names:tc:SAML:2.0:assertion">cmyu.net</Issuer>
+	<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+		<SignedInfo>
+			<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+			<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<Reference URI="#_8af677ea-f60a-4497-befa-0c6d2c5f4e1d">
+				<Transforms>
+					<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+				</Transforms>
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<DigestValue>fxko7EqI8TSDZo5W0H1PQ//AMuE=</DigestValue>
+			</Reference>
+		</SignedInfo>
+		<SignatureValue>WkzbJ4M7kQ1SokH13E0iLdtYTz2foDCGA/8LU4lJLB8yMMLvmULyaM8zYI/L2oDXvs3eUItKgWlCybGl0SOTG0CrHWCwHY4kJmOa8GN/dP9o64Hvo/D80GLooR4WefkiX7slCe8wSIFxZS0wBZIARwxThJrFmJx4KWW3iAtlbaI=</SignatureValue>
+		<KeyInfo>
+			<X509Data>
+				<X509Certificate>MIICADCCAW2gAwIBAgIQLIswQKnq6IZAJS+O5sJI9zAJBgUrDgMCHQUAMBMxETAPBgNVBAMTCGNteXUubmV0MB4XDTExMTIzMTE2MDAwMFoXDTEzMTIzMTE2MDAwMFowEzERMA8GA1UEAxMIY215dS5uZXQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALTjbFdm9UY08VXPQEA+22T46Jm1m3PlHMsqbvn7ObnBb3tTSXgRAOys9daQ9rNjM2IEfmLEtY8dS/ByUKarM51ZqZmBT9uqCkwptjrDoza8qgAZTvuX5dik/BsG6bLOwNCELFXzNhTbRc9oWXh4YbQZhVtHQstPf1jUntUx5okbAgMBAAGjXTBbMBMGA1UdJQQMMAoGCCsGAQUFBwMDMEQGA1UdAQQ9MDuAEAKYCSunzaQCEUPMTY45AjWhFTATMREwDwYDVQQDEwhjbXl1Lm5ldIIQLIswQKnq6IZAJS+O5sJI9zAJBgUrDgMCHQUAA4GBAJiO267IodERJAskn+8lKGavZWkQceLAagdHYx0KSqLoKHMEz5reCsIUulycQ9atsIytTag0gczSGuTnZCTPKk75pu77vV4MQtWHaKmniTqC57UUZYJJOwI63XGxq9uqG7Y8haQBoF8MKAXR1wdiwx+/RyJUaUvGv95mzk1lljlQ</X509Certificate>
+			</X509Data>
+		</KeyInfo>
+	</Signature>
+	<saml2p:Status>
+		<saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+	</saml2p:Status>
+	<Assertion ID="_e7461150-5764-4003-93c0-60e8c1e476d8" IssueInstant="2012-11-16T09:02:21.796Z" Version="2.0" xmlns="urn:oasis:names:tc:SAML:2.0:assertion">
+		<Issuer>cmyu.net</Issuer>
+		<Subject>
+			<NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress">michael.yu@centrify.com</NameID>
+			<SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+				<SubjectConfirmationData NotOnOrAfter="2012-11-16T10:02:21.796Z" Recipient="https://system.netsuite.com/saml2/acs"/>
+			</SubjectConfirmation>
+		</Subject>
+		<Conditions NotBefore="2012-11-16T08:59:21.796Z" NotOnOrAfter="2012-11-16T10:02:21.796Z">
+			<AudienceRestriction>
+				<Audience>http://www.netsuite.com/sp</Audience>
+			</AudienceRestriction>
+		</Conditions>
+		<AuthnStatement AuthnInstant="2012-11-16T09:02:21.796Z">
+			<AuthnContext>
+				<AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:unspecified</AuthnContextClassRef>
+			</AuthnContext>
+		</AuthnStatement>
+		<AttributeStatement>
+			<Attribute Name="email" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+				<AttributeValue p6:type="q1:string" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" xmlns:q1="http://www.w3.org/2001/XMLSchema">michael.yu@centrify.com</AttributeValue>
+			</Attribute>
+			<Attribute Name="account" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+				<AttributeValue p6:type="q2:string" xmlns:p6="http://www.w3.org/2001/XMLSchema-instance" xmlns:q2="http://www.w3.org/2001/XMLSchema">TSTDRV1018413</AttributeValue>
+			</Attribute>
+		</AttributeStatement>
+	</Assertion>
+</saml2p:Response>

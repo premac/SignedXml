@@ -1,0 +1,11 @@
+*.iws
+*.ipr
+*.iml
+.idea
+
+.gradle
+
+out
+*.class
+*.jar
+
